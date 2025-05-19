@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>F90 M5 Competition LCI - G/AB</title>
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body class="product">
+  <div id="overlay" class="overlay"></div>
+<header>
+  <div class="header-container">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="logo-center">
+      <a href="../index.html">
+        <img src="../images/gab50.png" alt="G/AB Logo" width="154" height="45" />
+      </a>
+    </div>
+	  
+<a href="https://www.roblox.com/games/14408358675/Global-Auto-Bazaar"><button class="purchase-btn">BUY NOW</button>	</a>
+	  
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+  		<li><a href="../vehicles.html">Vehicles</a></li>
+ 		<li><a href="../vehicles.html">Parts</a></li>
+	  	<li><a href="../vehicles.html">Bikes</a></li>
+	   </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="product-detail-section">
+    <div class="product-detail-container">
+
+      <!-- LEFT SIDE: IMAGE GALLERY -->
+<div class="product-gallery">
+  <div class="image-viewer">
+    <img src="../images/product-images/2022BMWF90M5CompetitionLCI_PDCT.png" alt="Main" class="main-image" id="mainImage">
+  </div>
+  <div class="thumbnail-row">
+    <img src="../images/product-images/2022BMWF90M5CompetitionLCI_PDCT.png" alt="Thumb 1" class="thumbnail" onclick="swapImage(this)">
+    <img src="../images/product-images/f90lci-1.png" class="thumbnail" onclick="swapImage(this)">
+    <img src="../images/product-images/f90lci-2.png" alt="Thumb 3" class="thumbnail" onclick="swapImage(this)">
+    <img src="../images/product-images/f90lci-3.png" alt="Thumb 4" class="thumbnail" onclick="swapImage(this)">
+    <img src="../images/product-images/f90lci-4.png" alt="Thumb 5" class="thumbnail" onclick="swapImage(this)">
+  </div>
+</div>
+
+      <!-- RIGHT SIDE: PRODUCT INFO -->
+<div class="product-info-panel product-features-box">
+  <h1 class="product-title">2022 BMW F90 M5 Competition LCI</h1>
+  <p class="product-subtitle">VEHICLE</p>
+
+  <div class="product-price">R$250</div>
+
+  <a href="https://www.roblox.com/games/14408358675/Global-Auto-Bazaar" class="purchase-button">Purchase</a>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Functioning Doors</li>
+    <li>Functioning Hood and Trunk</li>
+    <li>Functioning Specialmesh Lights</li>
+    <li>Functioning Steering Wheel</li>
+    <li>Functioning Gauges</li>
+    <li>Functioning Pedals</li>
+    <li>First Person Camera</li>
+    <li>Good Tune</li>
+    <li>Good Sounds</li>
+    <li>Multiple Wheel Options</li>
+  </ul>
+</div>
+
+    </div>
+  </main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="../images/gab50.png" alt="GAB Logo" width="150">
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.discord.gg/gab"><img src="../images/discord.svg" alt="Discord" width="24"></a>
+      <a href="https://www.instagram.com/globalautobazaar/"><img src="../images/instagram.svg" alt="Instagram" width="24"></a>
+      <a href="https://www.youtube.com/@GlobalAutoBazaar"><img src="../images/youtube.svg" alt="Youtube" width="24"></a>
+    </div>
+
+    <div class="footer-links">
+      <a href="../aboutus.html">About</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Information</h4>
+      <p>Global Auto Bazaar</p>
+      <p>Email: globalautobazaar@gmail.com</p>
+      <p>Direct Contact: @choco_chip</p>
+    </div>
+
+    <div class="footer-copy">
+      Copyright © 2025 - Global Auto Bazaar
+    </div>
+  </div>
+</footer>
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const overlay = document.getElementById('overlay');
+const logoCenter = document.querySelector('.logo-center');
+const header = document.querySelector("header");
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('open');
+  overlay.classList.toggle('active');
+  logoCenter.classList.toggle('dimmed');
+  header.classList.toggle('dimmed'); // This is the key addition
+});
+   function swapImage(img) {
+      document.getElementById("mainImage").src = img.src;
+    }
+</script>
+</body>
+</html>
